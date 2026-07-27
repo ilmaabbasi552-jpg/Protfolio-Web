@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#111;
+    color:#fff;
+}
+
+
+header{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+}
+
+
+nav a{
+    text-decoration:none;
+    color:#fff;
+    margin-left:50px;
+    
+}
+
+.btn{
+    background:#ff7b00;
+    color:#fff;
+    text-decoration:none;
+    padding:10px 22px;
+    border-radius:8px;
+    margin-top:100px;
+    align:center;
+}
+
+.btn:hover{
+    background:#ff9d2e;
+}
+
+.home{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:80px 8%;
+    min-height:85vh;
+}
+
+.content{
+    max-width:550px;
+}
+
+.content h4{
+    font-size:20px;
+    margin-bottom:10px;
+    color:white;
+    align:center;
+    margin-left:60px;
+}
+
+.content h2{
+    font-size:35px;
+    margin-bottom:10px;
+    color:white;
+    align:center;
+    margin-left:60px;
+}
+
+.content h1{
+    font-size:55px;
+    color:#ff7b00;
+    margin-bottom:25px;
+    font-family: Bookman, serif;
+    margin-top: 30px;
+    align:center;
+    margin-left:60px;
+}
+
+.social-icons{
+    margin-bottom:30px;
+    align:center;
+}
+
+.social-icons a{
+    width:45px;
+    height:45px;
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    border:2px solid #444;
+    border-radius:50%;
+    color:#fff;
+    text-decoration:none;
+    margin-right:12px;
+    transition:.3s;
+}
+
+.social-icons a:hover{
+    background:#ff7b00;
+    border-color:#ff7b00;
+}
+
+.buttons{
+    margin-bottom:40px;
+}
+
+.btn2{
+    padding:10px 22px;
+    margin-left:15px;
+    border:2px solid #555;
+    border-radius:8px;
+    color:#fff;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.btn2:hover{
+    background:#ff7b00;
+    border-color:#ff7b00;
+}
+
+.experience{
+    display:flex;
+    gap:50px;
+    margin-top:20px;
+    align:center;
+}
+
+.experience h3{
+    color:#ff7b00;
+    font-size:30px;
+    align:center;
+    margin-left:60px;
+}
+
+.experience p{
+    color:#bbb;
+    margin-top:8px;
+    align:center;
+    margin-left:60px;
+}
+
+.image{
+    width:420px;
+    height:420px;
+    border-radius:50%;
+    border:8px solid rgba(255,255,255,.08);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+    align:center;
+    margin-left:60px;
+}
+
+.image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    align:center;
+}
+
+@media(max-width:900px){
+
+.home{
+    flex-direction:column;
+    text-align:center;
+}
+
+.image{
+    margin-top:40px;
+    width:320px;
+    height:320px;
+}
+
+.experience{
+    justify-content:center;
+    flex-wrap:wrap;
+}
+/* 3D Heading Effect */
+
+h1, h2, h4{
+    font-family: 'Poppins', sans-serif;
+    color: #ff9800;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    transition: all 0.5s ease;
+
+    text-shadow:
+        1px 1px 0 #ffb74d,
+        2px 2px 0 #ff9800,
+        3px 3px 0 #fb8c00,
+        4px 4px 8px rgba(0,0,0,0.5);
+
+    animation: floatHeading 3s ease-in-out infinite;
+}
+
+/* Different Sizes */
+h1{
+    font-size:60px;
+}
+
+h2{
+    font-size:40px;
+}
+
+h4{
+    font-size:24px;
+}
+
+/* Hover Effect */
+h1:hover,
+h2:hover,
+h4:hover{
+    transform: perspective(600px) rotateX(12deg) scale(1.08);
+    color:#ffd54f;
+    text-shadow:
+        2px 2px 0 #ff9800,
+        4px 4px 0 #ff6f00,
+        8px 8px 20px rgba(255,165,0,0.8);
+}
+
+/* Floating Animation */
+@keyframes floatHeading{
+    0%,100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-8px);
+    }
+}
+   nav{
+    animation: slideDown 1s ease;
+}
+
+@keyframes slideDown{
+    from{
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+    nav{
+        width:500px;
+    }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="about.html">About Me!</a>
+        <a href= "projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+       <div class="image">
+        <img src="Screenshot_2026-07-19-20-16-12-376_com.miui.gallery.jpg"
+        <!-- Apni image baad me yahan add karna -->
+    </div>
+<section class="home">
+
+    <div class="content">
+        <h4>Hi I am</h4>
+
+        <h2>Ilma Abbasi</h2>
+
+        <h1>SOFTWARE ENGINEERING STUDENT</h1>
+
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+
+        <div class="buttons">
+            <a href="#" class="btn">Hire Me</a>
+            <a href="#" class="btn2">Download CV</a>
+        </div>
+
+        <div class="experience">
+
+            <div>
+                <h3>5+</h3>
+                <p>Experiences</p>
+            </div>
+
+            <div>
+                <h3>20+</h3>
+                <p>Projects Done</p>
+            </div>
+
+            <div>
+                <h3>
+                    "Building beautiful and responsive websites."
+                </h3>
+
+        </div>
+    </div>
+
+    <!-- Image Section -->
+    
+
+</section>
+
+</body>
+</html>
